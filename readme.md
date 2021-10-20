@@ -33,20 +33,20 @@ script.
 
 Here are the functions I created:
 
-*_columnsAsType:_* This takes a dataframe, the list of columns to be
+__columnsAsType:__ This takes a dataframe, the list of columns to be
 converted, and the type you want to change them to en masse. The output
 is the dataframe with the converted dataypes.
 
-*_positionDf:_* This function takes a dataframe and the position as an
+__positionDf:__ This function takes a dataframe and the position as an
 input. Since the main dataframe is broken out into positional dataframes,
 this functions made it convenient to do so with less code.
 
-*_rankDf:_* This functions takes in a dataframe, the column name to be
+__rankDf:__ This functions takes in a dataframe, the column name to be
 created, and the column being ranked. This first ranks the dataframe by
 the specified column and a new column is created displaying the ranks.
 The column is then sorted by rank in descending order.
 
-*_zScore:_* This function takes in a dataframe, finds the means and standard
+__zScore:__ This function takes in a dataframe, finds the means and standard
 deviations of the vlue, projection, form, and total points. These were
 then used to find the z-score for all of the specified columns for
 ranking and final projection.
