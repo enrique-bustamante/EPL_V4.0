@@ -46,7 +46,7 @@ elementTypesDf = pd.DataFrame(json_data['element_types'])
 teamsDf = pd.DataFrame(json_data['teams'])
 
 #%%
-# Get the current Gameweek that was most recently played
+# Get the current Gameweek that was most recentlyj layed
 eventsDf = pd.DataFrame(json_data['events'])
 eventsDf['played'] = eventsDf['deadline_time_epoch'] < time.time()
 eventsMaxDf = eventsDf[eventsDf['played'] == True ]
@@ -231,30 +231,30 @@ forwardDf.to_csv('rankings/ForwardRank.csv',index=True)
 # %%
 # Visualization
 sns.relplot(data=elementsDf, x='now_cost', y='points_per_game', col='position', hue='bonus', col_wrap=2)
-plt.savefig('images/costVsPPG.png')
+plt.savefig('images/costVsPPG.jpg')
 
 
 # %%
 sns.displot(elementsDf,x='points_per_game', hue='position', kind='kde', fill=True)
-plt.savefig('images/ppg.png')
+plt.savefig('images/ppg.jpg')
 
 # %%
 sns.boxplot(data=elementsDf, y='points_per_game', x='position')
-plt.savefig('images/ppgBox.png')
+plt.savefig('images/ppgBox.jpg')
 # %%
 sns.displot(elementsDf, x='ict_index', hue='position', kind='kde', fill=True)
-plt.savefig('images/ictIndex.png')
+plt.savefig('images/ictIndex.jpg')
 
 # %%
 sns.displot(elementsDf, x='bonus', hue='position', kind='kde', fill=True)
-plt.savefig('images/bonus.png')
+plt.savefig('images/bonus.jpg')
 
 # %%
 sns.displot(elementsDf, x='form', hue='position', kind='kde', fill=True)
-plt.savefig('images/form.png')
+plt.savefig('images/form.jpg')
 
 # %%
 sns.displot(elementsDf, x='total_points', hue='position', kind='kde', fill=True)
-plt.savefig('images/points.png')
+plt.savefig('images/points.jpg')
 # %%
 
