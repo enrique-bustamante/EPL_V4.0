@@ -103,4 +103,4 @@ These are the steps I followed
 
 
 ## Visuals
-![](images/form.png)
+![](Images/form.png)
