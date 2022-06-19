@@ -1,4 +1,4 @@
-# English Premier League Algorithm V3
+# English Premier League Algorithm V4
 
 ## Purpose
 
@@ -24,6 +24,10 @@ such as a players cost, points, form, and others will be taken into consideratio
 * requests
 * Beautiful Soup
 * Dataframe Image
+* Pyscript (eventually)
+
+### Version
+* 4.0 - Copied V3.0 and added in dream team along with automatic calculation of minutes cutoff
 
 ### Custom functions
 

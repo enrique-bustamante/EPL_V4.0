@@ -222,3 +222,4 @@ plt.savefig('images/form.png')
 # %%
 sns.displot(elementsDf, x='total_points', hue='position', kind='kde', fill=True)
 plt.savefig('images/points.png')
+# %%
